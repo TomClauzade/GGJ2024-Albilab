@@ -1,0 +1,133 @@
+[gd_scene load_steps=16 format=3 uid="uid://r8bgwrssjmh7"]
+
+[ext_resource type="Script" path="res://ScriptCharacterBody3D.gd" id="1_vphgh"]
+[ext_resource type="Texture2D" uid="uid://b7ju35rwu5wwb" path="res://Asset/Character/AnimSpriteSheet.png" id="2_d6rwh"]
+[ext_resource type="Script" path="res://PlayerAnimationMachine.gd" id="3_f3e7m"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_su3hv"]
+radius = 0.25027
+height = 0.989899
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4kaw3"]
+atlas = ExtResource("2_d6rwh")
+region = Rect2(0, 36, 33, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7p46"]
+atlas = ExtResource("2_d6rwh")
+region = Rect2(33, 36, 33, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0irj7"]
+atlas = ExtResource("2_d6rwh")
+region = Rect2(66, 36, 33, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_doffs"]
+atlas = ExtResource("2_d6rwh")
+region = Rect2(99, 36, 33, 28)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_idd7c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4kaw3")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j7p46")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0irj7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_doffs")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 8.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_paixm"]
+atlas = ExtResource("2_d6rwh")
+region = Rect2(0, 4, 33, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n1ylj"]
+atlas = ExtResource("2_d6rwh")
+region = Rect2(33, 4, 33, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_70ltk"]
+atlas = ExtResource("2_d6rwh")
+region = Rect2(66, 4, 33, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ww14t"]
+atlas = ExtResource("2_d6rwh")
+region = Rect2(99, 4, 33, 28)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u1gmd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_paixm")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n1ylj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_70ltk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ww14t")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 8.0
+}]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_n110v"]
+
+[node name="PlayerBody" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.54, 0, 0)
+axis_lock_linear_z = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+floor_stop_on_slope = false
+floor_max_angle = 0.261799
+script = ExtResource("1_vphgh")
+metadata/PlayerCharacter = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, -2.70489e-10, 0, -2.8983e-11, 1, 0, 1.45519e-10, 0, 1, 0.0779867, 0.494746, 4.37931e-06)
+shape = SubResource("CapsuleShape3D_su3hv")
+
+[node name="RomeoAnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(3.06398, -4.06513e-09, 6.98492e-10, -2.2909e-09, 3.49813, 6.98492e-10, 3.49246e-10, 6.98492e-10, 10.0054, 0.0636001, 0.519851, 3.89596e-06)
+visible = false
+shaded = true
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_idd7c")
+animation = &"Run"
+script = ExtResource("3_f3e7m")
+
+[node name="JulietteAnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(3.06398, -4.06513e-09, 6.98492e-10, -2.2909e-09, 3.49813, 6.98492e-10, 3.49246e-10, 6.98492e-10, 10.0054, 0.0636001, 0.519851, 3.8743e-06)
+visible = false
+shaded = true
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_u1gmd")
+animation = &"Run"
+script = ExtResource("3_f3e7m")
+
+[node name="Bulle" type="Sprite3D" parent="."]
+transform = Transform3D(135.812, -6.37924e-08, 4.36557e-10, 1.01119e-07, 74.0609, -4.36557e-11, -1.49012e-08, 9.31323e-09, 0.988065, 1.01717, 1.27347, -0.00388434)
+visible = false
+shaded = true
+texture = SubResource("CanvasTexture_n110v")
+
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]

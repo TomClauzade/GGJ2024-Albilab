@@ -1,0 +1,103 @@
+[gd_scene load_steps=16 format=3 uid="uid://b6ruti1sx0p2v"]
+
+[ext_resource type="Texture2D" uid="uid://dn1ovbmqg16wt" path="res://horloge/horloge.png" id="1_ujfta"]
+[ext_resource type="Script" path="res://horloge/horloge.gd" id="2_2j7ql"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hqwic"]
+atlas = ExtResource("1_ujfta")
+region = Rect2(180, 0, 1112, 1173)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yf1ks"]
+atlas = ExtResource("1_ujfta")
+region = Rect2(1292, 0, 1112, 1173)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_84iyx"]
+atlas = ExtResource("1_ujfta")
+region = Rect2(2404, 0, 1112, 1173)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gqy82"]
+atlas = ExtResource("1_ujfta")
+region = Rect2(3516, 0, 1112, 1173)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t2g5y"]
+atlas = ExtResource("1_ujfta")
+region = Rect2(4628, 0, 1112, 1173)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aedno"]
+atlas = ExtResource("1_ujfta")
+region = Rect2(5740, 0, 1112, 1173)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vu8nb"]
+atlas = ExtResource("1_ujfta")
+region = Rect2(180, 1173, 1112, 1173)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5r4jf"]
+atlas = ExtResource("1_ujfta")
+region = Rect2(1292, 1173, 1112, 1173)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lowcj"]
+atlas = ExtResource("1_ujfta")
+region = Rect2(2404, 1173, 1112, 1173)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7xpoa"]
+atlas = ExtResource("1_ujfta")
+region = Rect2(3516, 1173, 1112, 1173)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fcbde"]
+atlas = ExtResource("1_ujfta")
+region = Rect2(4628, 1173, 1112, 1173)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vus0"]
+atlas = ExtResource("1_ujfta")
+region = Rect2(5740, 1173, 1112, 1173)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_50dwc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hqwic")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yf1ks")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_84iyx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gqy82")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t2g5y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aedno")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vu8nb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5r4jf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lowcj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7xpoa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fcbde")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5vus0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="horloge" type="AnimatedSprite2D"]
+position = Vector2(1, -10)
+scale = Vector2(0.0587634, 0.0584647)
+sprite_frames = SubResource("SpriteFrames_50dwc")
+frame = 11
+script = ExtResource("2_2j7ql")

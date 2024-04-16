@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bljyciogawxiv"
+path="res://.godot/imported/SupportScene.obj-6715c931a7181ddc9f208c7432849e09.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SupportScene.obj-6715c931a7181ddc9f208c7432849e09.mesh"]
+
+source_file="res://Asset/SupportScene/SupportScene.obj"
+dest_files=["res://.godot/imported/SupportScene.obj-6715c931a7181ddc9f208c7432849e09.mesh", "res://.godot/imported/SupportScene.obj-6715c931a7181ddc9f208c7432849e09.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

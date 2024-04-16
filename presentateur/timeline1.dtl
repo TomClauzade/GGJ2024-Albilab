@@ -1,0 +1,15 @@
+join presentateur 1
+presentateur: Bonjour !
+presentateur: Bienvenu dans notre splendide théatre game show !
+presentateur: Je vois que le public est venu nombreux pour cette nouvelle partie.
+public: (cris)
+[music path="res://presentateur/CRWDCheer_Cris et applaudissements d ados 2 (ID 0237)_LS.mp3" fade="0.2" volume="0.0" loop="false"]
+presentateur: Aujourd'hui, nous allons joué une célèbre pièce de théatre \: Roméo et Juliette.\
+Mais tout d'abord je dois connaitre le nombre de participants à cette partie.
+label retour1
+[text_input text="Combien serez vous de participants (max 4) ?" var="nb_joueurs" default="2"]
+if {nb_joueurs} > 4:
+	presentateur: Mauvaise réponse...
+	jump retour1
+presentateur: Bravo !
+do VG.select_nb_joueurs({nb_joueurs})

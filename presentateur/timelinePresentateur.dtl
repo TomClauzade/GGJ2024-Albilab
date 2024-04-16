@@ -1,0 +1,19 @@
+join PresentateurDial 1
+[music path="res://Music/music_intro-Android-Sock-Hop(chosic.com).mp3" fade="0.0" volume="0.0"]
+PresentateurDial: Bonjour !
+PresentateurDial: Bienvenu dans notre splendide théâtre game show !
+PresentateurDial: Je vois que le public est venu nombreux pour cette nouvelle partie \:-)
+[sound path="res://presentateur/CRWDCheer_Cris et applaudissements d ados 2 (ID 0237)_LS.mp3" volume="0.0"]
+(cris)
+PresentateurDial: Aujourd'hui, nous allons jouer la conclusion de la scene du balcon, où Roméo tente de séduire Juliette ! Un grand moment d'émotion, né sous la plume de William Shakespeare !
+PresentateurDial: Mais vous le savez, ce qui compte dans notre théâtre ce ne sont pas les répliques... c'est l'art de les déclamer contre vents et marées !
+(cris)
+PresentateurDial: Vous entendez notre public, donnez-lui ce qu'il demande. Quel que soit votre rôle \: l'amoureux, l'amoureuse, le concierge qui souffle les répliques ou sa femme qui garde en main le scenario, TENEZ BON !!!
+PresentateurDial: Tuto rapide \: utiliser X/A pour sauter et les joysticks pour contrôler votre trajectoire. Quoi qu'il arrive, RESTEZ EN SCENE sous peine d'être éliminé !
+PresentateurDial: Au clavier \:\
+ENTER = Start \
+Joueur 1 -> Q et S deplacement et D pour sauter\
+Joueur 2 -> 5(Num) et 6(Num) deplacement et 4(Num) pour sauter
+label fin_rapide
+[music path="res://Music/music_background-theme_principal.mp3" fade="0.0" volume="0.0"]
+do VG.select_nb_joueurs({nb_joueurs})

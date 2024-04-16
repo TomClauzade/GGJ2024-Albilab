@@ -1,0 +1,30 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+"_translation_id": "",
+"color": Color(1, 1, 1, 1),
+"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+"default_portrait": "Joe",
+"description": "",
+"display_name": "Joe",
+"mirror": false,
+"nicknames": ["Joe"],
+"offset": Vector2(0, 0),
+"portraits": {
+"Joe": {
+"export_overrides": {
+"image": "\"res://presentateur/Present.png\""
+},
+"ignore_char_scale": false,
+"mirror": false,
+"offset": Vector2(20, -200),
+"scale": 0.25,
+"scene": ""
+}
+},
+"scale": 1.0
+}

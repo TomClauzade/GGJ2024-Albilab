@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://bbg0qp1yindwo"]
+
+[ext_resource type="Texture2D" uid="uid://cjp4g43y7bdrj" path="res://bulle/BulleTexte.png" id="1_d30e5"]
+[ext_resource type="Script" path="res://bulle/bulle.gd" id="2_aqjs2"]
+[ext_resource type="FontFile" uid="uid://db24mbdgbmcva" path="res://bulle/04B_30__.TTF" id="3_reh8t"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_h62w4"]
+size = Vector2(3, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mje6g"]
+transparency = 1
+albedo_texture = ExtResource("1_d30e5")
+
+[node name="bulle" type="MeshInstance3D"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+mesh = SubResource("QuadMesh_h62w4")
+surface_material_override/0 = SubResource("StandardMaterial3D_mje6g")
+script = ExtResource("2_aqjs2")
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.179, 0.719, 0.05)
+modulate = Color(0, 0, 0, 1)
+outline_modulate = Color(1, 1, 1, 1)
+text = "HO MA JULILETTE !"
+font = ExtResource("3_reh8t")
+font_size = 50
+horizontal_alignment = 0
+vertical_alignment = 0
+autowrap_mode = 2

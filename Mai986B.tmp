@@ -1,0 +1,1765 @@
+[gd_scene load_steps=68 format=3 uid="uid://b11bffm5ho280"]
+
+[ext_resource type="Script" path="res://UiEvent.gd" id="1_0ht00"]
+[ext_resource type="Script" path="res://EnvironnementEvent.gd" id="1_8vtv7"]
+[ext_resource type="Texture2D" uid="uid://c3gb1yr38yhea" path="res://UI/logoV4.png" id="1_aa1pj"]
+[ext_resource type="Script" path="res://EventScene.gd" id="1_d55f3"]
+[ext_resource type="Texture2D" uid="uid://c5sndvnpqc0gu" path="res://Asset/Maison.png" id="2_lvpg1"]
+[ext_resource type="Script" path="res://PathingCamera.gd" id="3_8kbb8"]
+[ext_resource type="Texture2D" uid="uid://c4hh57jfkrbul" path="res://Asset/Studio/BordureScene.png" id="3_bs531"]
+[ext_resource type="Texture2D" uid="uid://bjutxgm7804qp" path="res://Asset/Studio/DallePierre.png" id="4_vg8ms"]
+[ext_resource type="Texture2D" uid="uid://b4sdfp2eou8yj" path="res://Asset/Studio/Piscine.png" id="5_x1o0c"]
+[ext_resource type="Texture2D" uid="uid://p5tkpwn7sws6" path="res://Asset/Studio/carpet.png" id="6_dyljv"]
+[ext_resource type="Texture2D" uid="uid://cmr5y7xm7s5fi" path="res://Asset/Banc.png" id="7_340qo"]
+[ext_resource type="Script" path="res://BoudinArmEvent.gd" id="8_8dit2"]
+[ext_resource type="Texture2D" uid="uid://r687rjwcpsy4" path="res://Asset/Public/public1.png" id="8_u5lm8"]
+[ext_resource type="Script" path="res://PublicMoveRandom.gd" id="9_dvbui"]
+[ext_resource type="ArrayMesh" uid="uid://bjsxpdi4bdmas" path="res://Asset/Boudin/boudin.obj" id="9_egula"]
+[ext_resource type="Texture2D" uid="uid://duhmtotrl17q5" path="res://Asset/Public/public2.png" id="10_khmbj"]
+[ext_resource type="Texture2D" uid="uid://ckyrhqe6xr50t" path="res://Asset/Boudin/boudin.png" id="10_snuo3"]
+[ext_resource type="Texture2D" uid="uid://dy5nonqrchb2w" path="res://Asset/Public/public3.png" id="11_3bagv"]
+[ext_resource type="Texture2D" uid="uid://cd1s30cqam113" path="res://Asset/Public/public4.png" id="12_epqhd"]
+[ext_resource type="Texture2D" uid="uid://c5c6w3pxumfmy" path="res://Asset/Public/public5.png" id="13_umw63"]
+[ext_resource type="Texture2D" uid="uid://72to4oc348el" path="res://Asset/Public/public6.png" id="14_q7ld7"]
+[ext_resource type="Texture2D" uid="uid://bn2kl8kcpgdwd" path="res://Asset/Public/public7.png" id="15_22u5e"]
+[ext_resource type="Texture2D" uid="uid://uds6jhq1qyhr" path="res://Asset/Public/public8.png" id="16_ba8j1"]
+[ext_resource type="ArrayMesh" uid="uid://bda76soifkwhl" path="res://Asset/Spot/Spot.obj" id="17_mtjfo"]
+[ext_resource type="Texture2D" uid="uid://be7x64igme4ub" path="res://Asset/Studio/PoteauMetal.png" id="18_drlcn"]
+[ext_resource type="Texture2D" uid="uid://da0y0k0rktl4q" path="res://Asset/Studio/PoteauMetalLat.png" id="19_ftjs0"]
+[ext_resource type="ArrayMesh" uid="uid://bljyciogawxiv" path="res://Asset/SupportScene/SupportScene.obj" id="23_1blki"]
+[ext_resource type="Texture2D" uid="uid://uxlobo2cjcee" path="res://Asset/SupportScene/SupportScene.png" id="24_ku0lg"]
+
+[sub_resource type="Curve3D" id="Curve3D_ndsoy"]
+bake_interval = 0.01
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_l5wck"]
+_data = {
+"points": PackedVector3Array(-1.04678, 0.0408897, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -8),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_c1td8"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_alu2v"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_6mc8p"]
+size = Vector3(7.16967, 0.634031, 2.00494)
+
+[sub_resource type="BoxMesh" id="BoxMesh_egs8s"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_s541k"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wre7a"]
+transparency = 1
+albedo_texture = ExtResource("2_lvpg1")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8m5cj"]
+albedo_texture = ExtResource("3_bs531")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wha6g"]
+albedo_texture = ExtResource("4_vg8ms")
+uv1_scale = Vector3(20, 5, 1)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_gtyji"]
+radius = 0.182282
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_cjm7c"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_il701"]
+friction = 0.0
+bounce = 1.0
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_rsx0w"]
+radius = 0.403138
+height = 2.38988
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5cvkv"]
+albedo_texture = ExtResource("10_snuo3")
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_1ht03"]
+bounce = 1.0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_irfig"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nd6aa"]
+albedo_texture = ExtResource("5_x1o0c")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vx6ep"]
+albedo_texture = ExtResource("6_dyljv")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dvuye"]
+albedo_texture = ExtResource("7_340qo")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mjccp"]
+transparency = 1
+albedo_texture = ExtResource("8_u5lm8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xbsm2"]
+transparency = 1
+albedo_color = Color(0, 0, 0, 1)
+albedo_texture = ExtResource("10_khmbj")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qu5s1"]
+transparency = 1
+albedo_texture = ExtResource("10_khmbj")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8kgrp"]
+transparency = 1
+albedo_texture = ExtResource("11_3bagv")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lmm2w"]
+transparency = 1
+albedo_texture = ExtResource("12_epqhd")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lkh27"]
+transparency = 1
+albedo_texture = ExtResource("13_umw63")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a1lsl"]
+transparency = 1
+albedo_texture = ExtResource("14_q7ld7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0uji0"]
+transparency = 1
+albedo_texture = ExtResource("15_22u5e")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_earwb"]
+transparency = 1
+albedo_texture = ExtResource("16_ba8j1")
+
+[sub_resource type="BoxMesh" id="BoxMesh_gra7w"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_swjtj"]
+transparency = 1
+blend_mode = 1
+albedo_texture = ExtResource("18_drlcn")
+uv1_scale = Vector3(0.9, 1, 1)
+uv1_offset = Vector3(0.15, 0, 0)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 6.27669
+uv1_world_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q617e"]
+transparency = 1
+albedo_texture = ExtResource("19_ftjs0")
+uv1_offset = Vector3(0, 0.4, 0.3)
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_82chy"]
+albedo_color = Color(0.0862745, 0.0862745, 0.0862745, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_s5n2c"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oldsk"]
+albedo_color = Color(0.0431373, 0.0431373, 0.0431373, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yg7cy"]
+size = Vector3(0.31543, 7.48981, 3.74512)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vmfwo"]
+albedo_texture = ExtResource("24_ku0lg")
+
+[sub_resource type="BoxMesh" id="BoxMesh_s68ie"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5tf1q"]
+albedo_color = Color(0, 1, 0, 1)
+emission_enabled = true
+emission = Color(0.313726, 1, 0, 1)
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0.000842615, -0.0003578, -0.000842691, 1, -0.000223905, 0.000357622, 0.000224189, 1, 0, 0, 0)
+
+[node name="HUD" type="Node" parent="."]
+
+[node name="TitlePanel" type="Panel" parent="HUD"]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.995
+offset_right = -3.0
+offset_bottom = 0.239929
+script = ExtResource("1_0ht00")
+
+[node name="Sprite2D" type="Sprite2D" parent="HUD/TitlePanel"]
+position = Vector2(679, 325)
+scale = Vector2(0.583333, 0.583333)
+texture = ExtResource("1_aa1pj")
+
+[node name="Button" type="Button" parent="HUD/TitlePanel"]
+layout_mode = 0
+offset_left = 464.0
+offset_top = 433.0
+offset_right = 686.0
+offset_bottom = 481.0
+text = "\"Press Start\""
+
+[node name="Scene" type="Node" parent="."]
+script = ExtResource("1_d55f3")
+
+[node name="Lights" type="Node" parent="Scene"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Scene/Lights"]
+transform = Transform3D(0.698778, 0.00452386, -0.715324, -0.00424442, 0.999989, 0.00217789, 0.715326, 0.00151428, 0.698789, -6.3486, 0.0042135, 5.06632)
+visible = false
+
+[node name="Spot" type="Node" parent="Scene/Lights"]
+
+[node name="Spot5" type="MeshInstance3D" parent="Scene/Lights/Spot"]
+transform = Transform3D(-0.640459, -0.383996, -0.665101, 2.78713e-07, 0.866024, -0.499999, 0.767995, -0.320229, -0.554652, 7.73117, 3.95259, 2.41827)
+mesh = ExtResource("17_mtjfo")
+skeleton = NodePath("../../../..")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Scene/Lights/Spot/Spot5"]
+transform = Transform3D(-0.99567, -0.00166051, 0.0929259, -0.00170255, 1, -0.000367925, -0.0929261, -0.00052502, -0.995674, 0.0239155, 1.0455, 0.191704)
+light_color = Color(0, 1, 1, 1)
+light_energy = 16.0
+light_indirect_energy = 5.83
+spot_range = 10.0
+spot_attenuation = 0.001
+
+[node name="Spot7" type="MeshInstance3D" parent="Scene/Lights/Spot"]
+transform = Transform3D(0.576063, -0.408703, -0.707894, 2.55825e-07, 0.866024, -0.499999, 0.817407, 0.28803, 0.498883, 7.73117, 3.95259, 2.84774)
+mesh = ExtResource("17_mtjfo")
+skeleton = NodePath("../../../..")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Scene/Lights/Spot/Spot7"]
+transform = Transform3D(-0.99567, -0.00166051, 0.0929259, -0.00170255, 1, -0.000367925, -0.0929261, -0.00052502, -0.995674, 0.0239155, 1.0455, 0.191704)
+light_color = Color(0, 1, 1, 1)
+light_energy = 0.2
+light_indirect_energy = 5.83
+spot_range = 20.0
+spot_attenuation = 0.001
+spot_angle = 60.0
+
+[node name="Spot6" type="MeshInstance3D" parent="Scene/Lights/Spot"]
+transform = Transform3D(-0.52308, 0.426142, 0.738099, 3.12924e-07, 0.866024, -0.499999, -0.852285, -0.261539, -0.452999, -10.1785, 2.85139, -0.753196)
+mesh = ExtResource("17_mtjfo")
+skeleton = NodePath("../../../..")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Scene/Lights/Spot/Spot6"]
+transform = Transform3D(-0.995671, -0.00166094, 0.0929267, -0.00170254, 0.999999, -0.000368367, -0.0929262, -0.000524985, -0.995674, 0.0239153, 1.0455, 0.191704)
+light_color = Color(1, 0.298039, 0.0862745, 1)
+light_energy = 16.0
+light_indirect_energy = 5.83
+spot_range = 10.0
+spot_attenuation = 0.001
+
+[node name="Spot8" type="MeshInstance3D" parent="Scene/Lights/Spot"]
+transform = Transform3D(0.687861, 0.362921, 0.628597, 2.97335e-07, 0.866024, -0.499999, -0.725844, 0.34393, 0.595704, -10.1785, 2.85139, 0.241945)
+mesh = ExtResource("17_mtjfo")
+skeleton = NodePath("../../../..")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Scene/Lights/Spot/Spot8"]
+transform = Transform3D(-0.995671, -0.00166067, 0.0929261, -0.00170255, 1, -0.000367582, -0.0929261, -0.000524953, -0.995674, 0.0239153, 1.0455, 0.191705)
+light_color = Color(1, 0.298039, 0.0862745, 1)
+light_energy = 0.2
+light_indirect_energy = 5.83
+spot_range = 20.0
+spot_attenuation = 0.001
+spot_angle = 60.0
+
+[node name="Spot3" type="MeshInstance3D" parent="Scene/Lights/Spot"]
+transform = Transform3D(-0.866026, 0, -0.499999, 0.12941, 0.965926, -0.224144, 0.482963, -0.258819, -0.836515, 7.22165, 6.11787, 10.4575)
+mesh = ExtResource("17_mtjfo")
+skeleton = NodePath("../../../..")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Scene/Lights/Spot/Spot3"]
+transform = Transform3D(-0.995671, -0.00166091, 0.0929268, -0.00170254, 0.999999, -0.000368722, -0.0929262, -0.000524982, -0.995674, 0.0239148, 1.0455, 0.191704)
+light_energy = 8.396
+spot_range = 49.4564
+
+[node name="Spot4" type="MeshInstance3D" parent="Scene/Lights/Spot"]
+transform = Transform3D(-0.918311, 0.202027, 0.340428, 0.12941, 0.965926, -0.224144, -0.374112, -0.161779, -0.913163, -8.54227, 6.11787, 10.4575)
+mesh = ExtResource("17_mtjfo")
+skeleton = NodePath("../../../..")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Scene/Lights/Spot/Spot4"]
+transform = Transform3D(-0.995671, -0.00166091, 0.0929268, -0.00170254, 0.999999, -0.000368722, -0.0929262, -0.000524982, -0.995674, 0.0239148, 1.0455, 0.191704)
+light_energy = 8.396
+spot_range = 49.4564
+
+[node name="Camera" type="Node" parent="Scene"]
+
+[node name="CinematicCamera" type="Node" parent="Scene/Camera"]
+
+[node name="Face_Public" type="Path3D" parent="Scene/Camera/CinematicCamera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.35344, 2.57348, -0.205524)
+curve = SubResource("Curve3D_ndsoy")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Scene/Camera/CinematicCamera/Face_Public"]
+rotation_mode = 0
+loop = false
+script = ExtResource("3_8kbb8")
+
+[node name="CameraFacePublic" type="Camera3D" parent="Scene/Camera/CinematicCamera/Face_Public/PathFollow3D"]
+transform = Transform3D(-1, 0, -8.9407e-08, 0, 1, 0, 8.9407e-08, 0, -1, 0, 0, 0)
+current = true
+fov = 80.0
+
+[node name="Forward2" type="Path3D" parent="Scene/Camera/CinematicCamera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.415287, 3.6897, 9.60119)
+curve = SubResource("Curve3D_l5wck")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Scene/Camera/CinematicCamera/Forward2"]
+transform = Transform3D(1, 0, 0, 0, 0.999996, 0, 0, 0, 0.999996, 0, 0, 0)
+rotation_mode = 0
+loop = false
+tilt_enabled = false
+script = ExtResource("3_8kbb8")
+
+[node name="CameraLooping" type="Camera3D" parent="Scene/Camera/CinematicCamera/Forward2/PathFollow3D"]
+fov = 80.0
+
+[node name="Side_Front2" type="Path3D" parent="Scene/Camera/CinematicCamera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.11395, 0.835721, 6.98016)
+curve = SubResource("Curve3D_c1td8")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Scene/Camera/CinematicCamera/Side_Front2"]
+rotation_mode = 0
+loop = false
+script = ExtResource("3_8kbb8")
+
+[node name="CameraFront" type="Camera3D" parent="Scene/Camera/CinematicCamera/Side_Front2/PathFollow3D"]
+current = true
+fov = 80.0
+
+[node name="StaticCamera2" type="Camera3D" parent="Scene/Camera/CinematicCamera"]
+transform = Transform3D(1, 0, 0, 0, 0.999925, -0.0122697, 0, 0.0122697, 0.999925, -0.159329, 3.81601, 4.10356)
+fov = 80.0
+
+[node name="StaticCameraAngle2" type="Camera3D" parent="Scene/Camera/CinematicCamera"]
+transform = Transform3D(0.773693, 0.233808, -0.58884, 0.0161269, 0.921845, 0.387223, 0.633355, -0.309088, 0.709455, -5.41531, 4.32564, 7.19643)
+fov = 80.0
+
+[node name="InGameCamera" type="Node" parent="Scene/Camera"]
+
+[node name="Forward" type="Path3D" parent="Scene/Camera/InGameCamera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.415287, 3.6897, 9.60119)
+visible = false
+curve = SubResource("Curve3D_l5wck")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Scene/Camera/InGameCamera/Forward"]
+transform = Transform3D(1, 0, 0, 0, 0.999996, 0, 0, 0, 0.999996, 0, 0, -8)
+progress = 11.6322
+rotation_mode = 0
+cubic_interp = false
+tilt_enabled = false
+script = ExtResource("3_8kbb8")
+
+[node name="CameraFor" type="Camera3D" parent="Scene/Camera/InGameCamera/Forward/PathFollow3D"]
+fov = 80.0
+
+[node name="Side_Front" type="Path3D" parent="Scene/Camera/InGameCamera"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.11395, 0.835721, 6.98016)
+visible = false
+curve = SubResource("Curve3D_c1td8")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Scene/Camera/InGameCamera/Side_Front"]
+rotation_mode = 0
+script = ExtResource("3_8kbb8")
+
+[node name="CameraFront" type="Camera3D" parent="Scene/Camera/InGameCamera/Side_Front/PathFollow3D"]
+fov = 80.0
+
+[node name="Path3D_Static" type="Path3D" parent="Scene/Camera/InGameCamera"]
+curve = SubResource("Curve3D_alu2v")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Scene/Camera/InGameCamera/Path3D_Static"]
+script = ExtResource("3_8kbb8")
+
+[node name="StaticCamera" type="Camera3D" parent="Scene/Camera/InGameCamera/Path3D_Static/PathFollow3D"]
+transform = Transform3D(1, 0, 0, 0, 0.999925, -0.0122697, 0, 0.0122697, 0.999925, -0.159329, 3.81601, 4.10356)
+fov = 80.0
+
+[node name="Path3D_StaticAngle" type="Path3D" parent="Scene/Camera/InGameCamera"]
+curve = SubResource("Curve3D_alu2v")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="Scene/Camera/InGameCamera/Path3D_StaticAngle"]
+script = ExtResource("3_8kbb8")
+
+[node name="StaticCameraAngle" type="Camera3D" parent="Scene/Camera/InGameCamera/Path3D_StaticAngle/PathFollow3D"]
+transform = Transform3D(0.773693, 0.233808, -0.58884, 0.0161269, 0.921845, 0.387223, 0.633355, -0.309088, 0.709455, -5.41531, 4.32564, 7.19643)
+visible = false
+fov = 80.0
+
+[node name="Planches" type="Node" parent="."]
+
+[node name="Planche(StaticBody3D)" type="StaticBody3D" parent="Planches"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.181613, 2.2824, -0.689668)
+script = ExtResource("1_8vtv7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Planches/Planche(StaticBody3D)"]
+transform = Transform3D(1, -1.06281e-08, 3.11411e-09, -1.85428e-08, 1, -2.37196e-09, 1.1496e-08, 3.23053e-09, 1, 0.0236381, -0.845126, -0.501035)
+shape = SubResource("BoxShape3D_6mc8p")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Planches/Planche(StaticBody3D)"]
+transform = Transform3D(7.23757, -2.21853e-10, 2.09548e-09, -9.9462e-09, 0.796569, -2.09548e-09, 1.67295e-10, 2.32831e-10, 1.99975, -0.00526063, -0.932831, -0.502514)
+mesh = SubResource("BoxMesh_egs8s")
+
+[node name="Maison" type="MeshInstance3D" parent="Planches/Planche(StaticBody3D)"]
+transform = Transform3D(3.27252, 0.000357621, 0.00199368, 0.00275745, 0.000224146, -2.36586, -0.00117094, 1, 0.000529583, -0.00198868, 1.77274, -1.38328)
+mesh = SubResource("PlaneMesh_s541k")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wre7a")
+
+[node name="BordureScene" type="MeshInstance3D" parent="Planches/Planche(StaticBody3D)"]
+transform = Transform3D(3.63019, 0.000357566, 0.000346886, 0.00305883, 0.000224111, -0.411642, -0.00129892, 0.999846, 9.21435e-05, 0.000170368, -0.923358, 0.522881)
+mesh = SubResource("PlaneMesh_s541k")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_8m5cj")
+
+[node name="BordureScene5" type="MeshInstance3D" parent="Planches/Planche(StaticBody3D)"]
+transform = Transform3D(3.63092, -0.000842888, 0.000397999, 0.00305944, 1.00024, 0.000249502, -0.00129918, -0.000223941, 1.11291, -0.000322255, -0.513442, -0.579514)
+mesh = SubResource("PlaneMesh_s541k")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wha6g")
+
+[node name="BordureScene4" type="MeshInstance3D" parent="Planches/Planche(StaticBody3D)"]
+transform = Transform3D(-3.63165, -0.000357517, 0.000347051, -0.00306006, -0.000224222, -0.411837, 0.00129912, -0.999953, 9.22232e-05, -0.00035681, -0.923935, -1.52871)
+mesh = SubResource("PlaneMesh_s541k")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_8m5cj")
+
+[node name="BordureScene2" type="MeshInstance3D" parent="Planches/Planche(StaticBody3D)"]
+transform = Transform3D(0.000376937, -0.718012, 0.000346751, 0.000236327, -0.000605035, -0.41146, 1.05414, 0.000256881, 9.21209e-05, -3.63383, -0.928997, -0.542028)
+mesh = SubResource("PlaneMesh_s541k")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_8m5cj")
+
+[node name="BordureScene3" type="MeshInstance3D" parent="Planches/Planche(StaticBody3D)"]
+transform = Transform3D(-0.000376885, 0.717724, 0.000346551, -0.000236352, 0.000604729, -0.411265, -1.05425, -0.000256715, 9.20772e-05, 3.62928, -0.918326, -0.545645)
+mesh = SubResource("PlaneMesh_s541k")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_8m5cj")
+
+[node name="BoudinArm" type="StaticBody3D" parent="Planches"]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 6.35893, -1.17112)
+script = ExtResource("8_8dit2")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Planches/BoudinArm"]
+shape = SubResource("SphereShape3D_gtyji")
+
+[node name="Sprite3D" type="Sprite3D" parent="Planches/BoudinArm"]
+transform = Transform3D(24.6591, 0, 0, 0, 22.7048, 0, 0, 0, 0.999999, 0, 0, 0)
+texture = SubResource("CanvasTexture_cjm7c")
+
+[node name="BoudinHaut" type="StaticBody3D" parent="Planches/BoudinArm"]
+transform = Transform3D(-1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, -2.50959e-07, 2.87063, 0.23062)
+physics_material_override = SubResource("PhysicsMaterial_il701")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Planches/BoudinArm/BoudinHaut"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.0191936, 0)
+shape = SubResource("CapsuleShape3D_rsx0w")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Planches/BoudinArm/BoudinHaut"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.567936, 0.106253, -1.38055, 0)
+mesh = ExtResource("9_egula")
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvkv")
+
+[node name="BoudinBas" type="StaticBody3D" parent="Planches/BoudinArm"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.80127, 0.23062)
+physics_material_override = SubResource("PhysicsMaterial_1ht03")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Planches/BoudinArm/BoudinBas"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.0191936, 0)
+shape = SubResource("CapsuleShape3D_rsx0w")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Planches/BoudinArm/BoudinBas"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.567936, 0.106253, -1.38055, 0)
+mesh = ExtResource("9_egula")
+surface_material_override/0 = SubResource("StandardMaterial3D_5cvkv")
+
+[node name="Decors" type="Node" parent="."]
+
+[node name="eau" type="MeshInstance3D" parent="Decors"]
+transform = Transform3D(-5.81096, 3.10588e-22, 3.24173e-07, 4.12894e-14, 1, 0, -5.08011e-07, -3.55271e-15, -3.7081, -0.105125, -1.0753, -3.31225)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_nd6aa")
+
+[node name="Carpets" type="Node" parent="Decors"]
+
+[node name="Carpet" type="MeshInstance3D" parent="Decors/Carpets"]
+transform = Transform3D(-3.09332, 3.10588e-22, 2.78559e-07, 2.19794e-14, 1, 0, -2.70427e-07, -3.55271e-15, -3.18634, 5.39305, -1.09937, -3.41909)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_vx6ep")
+
+[node name="Carpet2" type="MeshInstance3D" parent="Decors/Carpets"]
+transform = Transform3D(-3.09332, 3.10588e-22, 2.78559e-07, 2.19794e-14, 1, 0, -2.70427e-07, -3.55271e-15, -3.18634, -0.835722, -1.09937, -3.41909)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_vx6ep")
+
+[node name="Carpet3" type="MeshInstance3D" parent="Decors/Carpets"]
+transform = Transform3D(-3.09332, 3.10588e-22, 2.78559e-07, 2.19794e-14, 1, 0, -2.70427e-07, -3.55271e-15, -3.18634, -6.93636, -1.09937, -3.41909)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_vx6ep")
+
+[node name="Carpet4" type="MeshInstance3D" parent="Decors/Carpets"]
+transform = Transform3D(-3.09332, 3.10588e-22, 2.78559e-07, 2.19794e-14, 1, 0, -2.70427e-07, -3.55271e-15, -3.18634, 5.39305, -1.09937, 2.91224)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_vx6ep")
+
+[node name="Carpet5" type="MeshInstance3D" parent="Decors/Carpets"]
+transform = Transform3D(-3.09332, 3.10588e-22, 2.78559e-07, 2.19794e-14, 1, 0, -2.70427e-07, -3.55271e-15, -3.18634, -0.835722, -1.09937, 2.91224)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_vx6ep")
+
+[node name="Carpet6" type="MeshInstance3D" parent="Decors/Carpets"]
+transform = Transform3D(-3.09332, 3.10588e-22, 2.78559e-07, 2.19794e-14, 1, 0, -2.70427e-07, -3.55271e-15, -3.18634, -6.93636, -1.09937, 2.91224)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_vx6ep")
+
+[node name="Carpet7" type="MeshInstance3D" parent="Decors/Carpets"]
+transform = Transform3D(-3.09332, 3.10588e-22, 2.78559e-07, 2.19794e-14, 1, 0, -2.70427e-07, -3.55271e-15, -3.18634, 5.39305, -1.09937, 9.11602)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_vx6ep")
+
+[node name="Carpet8" type="MeshInstance3D" parent="Decors/Carpets"]
+transform = Transform3D(-3.09332, 3.10588e-22, 2.78559e-07, 2.19794e-14, 1, 0, -2.70427e-07, -3.55271e-15, -3.18634, -0.835722, -1.09937, 9.11602)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_vx6ep")
+
+[node name="Carpet9" type="MeshInstance3D" parent="Decors/Carpets"]
+transform = Transform3D(-3.09332, 3.10588e-22, 2.78559e-07, 2.19794e-14, 1, 0, -2.70427e-07, -3.55271e-15, -3.18634, -6.93636, -1.09937, 9.11602)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_vx6ep")
+
+[node name="Banc" type="Node" parent="Decors"]
+
+[node name="Banc1" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-3.09332, 0, 2.97672e-08, -2.70427e-07, -4.37114e-08, -0.340497, 1.18207e-14, -1, 1.48836e-08, -0.05347, 0.527138, 8.81544)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc2" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-3.09332, 3.10588e-22, 2.97672e-08, 2.19794e-14, 1, 0, -2.70427e-07, -3.55271e-15, -0.340497, -0.05347, 0.862894, 9.15334)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc3" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-3.09332, 0, 2.97672e-08, -2.70427e-07, -4.37114e-08, -0.340497, 1.18207e-14, -1, 1.48836e-08, -0.05347, -0.166395, 8.15874)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc4" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-3.09332, 3.10588e-22, 2.97672e-08, 2.19794e-14, 1, 0, -2.70427e-07, -3.55271e-15, -0.340497, -0.05347, 0.169361, 8.49654)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc5" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-3.09332, 0, 2.97672e-08, -2.70427e-07, -4.37114e-08, -0.340497, 1.18207e-14, -1, 1.48836e-08, -0.056641, -0.789863, 7.47504)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc6" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-3.09332, 3.10588e-22, 2.97672e-08, 2.19794e-14, 1, 0, -2.70427e-07, -3.55271e-15, -0.340497, -0.056641, -0.454107, 7.81284)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc7" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-2.18731, -0.707107, 3.15728e-08, -2.70427e-07, -4.37114e-08, -0.340497, 2.18731, -0.707107, -1.05243e-08, 4.86345, 0.527138, 6.83454)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc8" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-2.18731, -2.51215e-15, -0.240767, 2.19794e-14, 1, -1.26069e-29, 2.18731, -2.51215e-15, -0.240767, 5.10232, 0.862894, 7.07344)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc9" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-2.18731, -0.707107, 3.15728e-08, -2.70427e-07, -4.37114e-08, -0.340497, 2.18731, -0.707107, -1.05243e-08, 4.39904, -0.166395, 6.37014)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc10" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-2.18731, -2.51215e-15, -0.240767, 2.19794e-14, 1, -1.26069e-29, 2.18731, -2.51215e-15, -0.240767, 4.63791, 0.169361, 6.60894)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc11" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-2.18731, -0.707107, 3.15728e-08, -2.70427e-07, -4.37114e-08, -0.340497, 2.18731, -0.707107, -1.05243e-08, 3.91339, -0.789863, 5.88894)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc12" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-2.18731, -2.51215e-15, -0.240767, 2.19794e-14, 1, -1.26069e-29, 2.18731, -2.51215e-15, -0.240767, 4.15226, -0.454107, 6.12784)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc13" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-2.18731, 0.707107, 1.05243e-08, -2.70427e-07, -4.37114e-08, -0.340497, -2.18731, -0.707107, 3.15728e-08, -4.8595, 0.527138, 6.83604)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc14" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-2.18731, 2.51215e-15, 0.240767, 2.19794e-14, 1, -1.01969e-22, -2.18731, -2.51215e-15, -0.240767, -5.09837, 0.862894, 7.07494)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc15" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-2.18731, 0.707107, 1.05243e-08, -2.70427e-07, -4.37114e-08, -0.340497, -2.18731, -0.707107, 3.15728e-08, -4.39509, -0.166395, 6.37164)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc16" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-2.18731, 2.51215e-15, 0.240767, 2.19794e-14, 1, -1.01969e-22, -2.18731, -2.51215e-15, -0.240767, -4.63396, 0.169361, 6.61044)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc17" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-2.18731, 0.707107, 1.05243e-08, -2.70427e-07, -4.37114e-08, -0.340497, -2.18731, -0.707107, 3.15728e-08, -3.91393, -0.789863, 5.88594)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc18" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-2.18731, 2.51215e-15, 0.240767, 2.19794e-14, 1, -1.01969e-22, -2.18731, -2.51215e-15, -0.240767, -4.1528, -0.454107, 6.12484)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc19" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(2.38419e-07, 1, -1.48836e-08, -2.70427e-07, -4.37114e-08, -0.340497, -3.09332, 5.96046e-08, 2.97672e-08, -7.29032, 0.527138, 1.9845)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc20" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(3.57628e-07, 3.55271e-15, 0.340497, 2.19794e-14, 1, -1.01969e-22, -3.09332, 5.29396e-22, 2.98023e-08, -7.62814, 0.862894, 1.9845)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc21" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(2.38419e-07, 1, -1.48836e-08, -2.70427e-07, -4.37114e-08, -0.340497, -3.09332, 5.96046e-08, 2.97672e-08, -6.63354, -0.166395, 1.9845)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc22" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(3.57628e-07, 3.55271e-15, 0.340497, 2.19794e-14, 1, -1.01969e-22, -3.09332, 5.29396e-22, 2.98023e-08, -6.97136, 0.169361, 1.9845)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc23" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(2.38419e-07, 1, -1.48836e-08, -2.70427e-07, -4.37114e-08, -0.340497, -3.09332, 5.96046e-08, 2.97672e-08, -5.94991, -0.789863, 1.98133)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc24" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(3.57628e-07, 3.55271e-15, 0.340497, 2.19794e-14, 1, -1.01969e-22, -3.09332, 5.29396e-22, 2.98023e-08, -6.28772, -0.454107, 1.98133)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc25" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(3.20081e-08, -1, 1.48836e-08, -2.70427e-07, -4.37114e-08, -0.340497, 3.09332, 2.78181e-08, -2.97672e-08, 6.87288, 0.527138, 1.98238)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc26" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-8.72011e-08, -3.55271e-15, -0.340497, 2.19794e-14, 1, -1.01969e-22, 3.09332, -2.18808e-22, -3.51701e-11, 7.21069, 0.862894, 1.98238)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc27" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(3.20081e-08, -1, 1.48836e-08, -2.70427e-07, -4.37114e-08, -0.340497, 3.09332, 2.78181e-08, -2.97672e-08, 6.2161, -0.166395, 1.98238)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc28" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-8.72011e-08, -3.55271e-15, -0.340497, 2.19794e-14, 1, -1.01969e-22, 3.09332, -2.18808e-22, -3.51701e-11, 6.55391, 0.169361, 1.98238)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc29" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(3.20081e-08, -1, 1.48836e-08, -2.70427e-07, -4.37114e-08, -0.340497, 3.09332, 2.78181e-08, -2.97672e-08, 5.53246, -0.789863, 1.98555)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Banc30" type="MeshInstance3D" parent="Decors/Banc"]
+transform = Transform3D(-8.72011e-08, -3.55271e-15, -0.340497, 2.19794e-14, 1, -1.01969e-22, 3.09332, -2.18808e-22, -3.51701e-11, 5.87028, -0.454107, 1.98555)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../../Public")
+surface_material_override/0 = SubResource("StandardMaterial3D_dvuye")
+
+[node name="Public" type="Node" parent="Decors"]
+
+[node name="People1" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325804, 0, 4.43745e-08, -2.84827e-08, -4.37114e-08, -0.507585, 1.24502e-15, -1, 2.21872e-08, 0.0848668, -0.56889, 2.42553)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_mjccp")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People1"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People2" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.328559, 0, 4.43745e-08, -2.87235e-08, -4.37114e-08, -0.507585, 1.25554e-15, -1, 2.21872e-08, 0.420758, 0.642142, 8.48732)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_qu5s1")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People2"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People3" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325858, 0, 4.43745e-08, -2.84875e-08, -4.37114e-08, -0.507585, 1.24522e-15, -1, 2.21872e-08, -0.229854, 0.642142, 8.48732)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_8kgrp")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People3"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People41" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325804, 0, 4.43745e-08, -2.84827e-08, -4.37114e-08, -0.507585, 1.24502e-15, -1, 2.21872e-08, 1.02128, -0.620094, 6.20015)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_mjccp")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People41"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People55" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325804, 0, 4.43745e-08, -2.84827e-08, -4.37114e-08, -0.507585, 1.24502e-15, -1, 2.21872e-08, -0.0926541, -0.620094, 4.74073)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_mjccp")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People55"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People56" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325804, 0, 4.43745e-08, -2.84827e-08, -4.37114e-08, -0.507585, 1.24502e-15, -1, 2.21872e-08, -2.39104, -0.620094, 4.36551)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_mjccp")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People56"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People57" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325804, 0, 4.43745e-08, -2.84827e-08, -4.37114e-08, -0.507585, 1.24502e-15, -1, 2.21872e-08, -1.58985, -0.620094, 6.06636)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_mjccp")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People57"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People58" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325804, 0, 4.43745e-08, -2.84827e-08, -4.37114e-08, -0.507585, 1.24502e-15, -1, 2.21872e-08, 2.28552, -0.620094, 4.28121)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_mjccp")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People58"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People42" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325858, 0, 4.43745e-08, -2.84875e-08, -4.37114e-08, -0.507585, 1.24522e-15, -1, 2.21872e-08, -0.229854, -0.620094, 6.20015)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_8kgrp")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People42"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People59" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325858, 0, 4.43745e-08, -2.84875e-08, -4.37114e-08, -0.507585, 1.24522e-15, -1, 2.21872e-08, 2.09822, -0.620094, 6.20816)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_8kgrp")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People59"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People60" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325858, 0, 4.43745e-08, -2.84875e-08, -4.37114e-08, -0.507585, 1.24522e-15, -1, 2.21872e-08, -1.67395, -0.620094, 5.11251)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_8kgrp")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People60"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People61" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325858, 0, 4.43745e-08, -2.84875e-08, -4.37114e-08, -0.507585, 1.24522e-15, -1, 2.21872e-08, 0.704834, -0.620094, 5.32543)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_8kgrp")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People61"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People62" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325858, 0, 4.43745e-08, -2.84875e-08, -4.37114e-08, -0.507585, 1.24522e-15, -1, 2.21872e-08, -3.35275, -0.620094, 4.69868)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_8kgrp")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People62"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People4" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325858, 0, 4.43745e-08, -2.84875e-08, -4.37114e-08, -0.507585, 1.24522e-15, -1, 2.21872e-08, -0.825211, 0.642142, 8.48732)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_lmm2w")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People4"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People43" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.328559, 0, 4.43745e-08, -2.87235e-08, -4.37114e-08, -0.507585, 1.25554e-15, -1, 2.21872e-08, 0.287559, -0.601971, 6.61502)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_qu5s1")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People43"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People63" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.328559, 0, 4.43745e-08, -2.87235e-08, -4.37114e-08, -0.507585, 1.25554e-15, -1, 2.21872e-08, 1.63034, -0.601971, 4.7586)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_qu5s1")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People63"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People64" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.328559, 0, 4.43745e-08, -2.87235e-08, -4.37114e-08, -0.507585, 1.25554e-15, -1, 2.21872e-08, -0.681495, -0.601971, 4.29442)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_qu5s1")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People64"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People65" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.328559, 0, 4.43745e-08, -2.87235e-08, -4.37114e-08, -0.507585, 1.25554e-15, -1, 2.21872e-08, 3.3185, -0.601971, 4.29442)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_qu5s1")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People65"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People66" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.328559, 0, 4.43745e-08, -2.87235e-08, -4.37114e-08, -0.507585, 1.25554e-15, -1, 2.21872e-08, 3.01598, -0.601971, 5.60372)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_qu5s1")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People66"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People44" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325858, 0, 4.43745e-08, -2.84875e-08, -4.37114e-08, -0.507585, 1.24522e-15, -1, 2.21872e-08, -2.37438, -0.601971, 6.61502)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_lmm2w")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People44"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People67" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325858, 0, 4.43745e-08, -2.84875e-08, -4.37114e-08, -0.507585, 1.24522e-15, -1, 2.21872e-08, -3.95688, -0.601971, 4.93332)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_lmm2w")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People67"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People68" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325858, 0, 4.43745e-08, -2.84875e-08, -4.37114e-08, -0.507585, 1.24522e-15, -1, 2.21872e-08, 1.53666, -0.601971, 6.82213)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_lmm2w")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People68"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People69" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325858, 0, 4.43745e-08, -2.84875e-08, -4.37114e-08, -0.507585, 1.24522e-15, -1, 2.21872e-08, -3.21363, -0.601971, 4.14457)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_lmm2w")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People69"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People5" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325858, 0, 4.43745e-08, -2.84875e-08, -4.37114e-08, -0.507585, 1.24522e-15, -1, 2.21872e-08, 0.905277, 0.0642967, 7.7864)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_lkh27")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People5"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People6" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.288274, 0, 4.43745e-08, -2.52018e-08, -4.37114e-08, -0.507585, 1.1016e-15, -1, 2.21872e-08, 0.36474, 0.0642967, 7.7864)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1lsl")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People6"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People7" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.288528, 0, 4.43745e-08, -2.5224e-08, -4.37114e-08, -0.507585, 1.10257e-15, -1, 2.21872e-08, -0.229854, 0.0642967, 7.7864)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_0uji0")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People7"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People8" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.285554, 0, 4.43745e-08, -2.49639e-08, -4.37114e-08, -0.507585, 1.09121e-15, -1, 2.21872e-08, -0.825211, 0.0642967, 7.7864)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_earwb")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People8"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People45" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325858, 0, 4.43745e-08, -2.84875e-08, -4.37114e-08, -0.507585, 1.24522e-15, -1, 2.21872e-08, 1.74219, -0.588835, 5.35477)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_lkh27")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People45"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People52" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325858, 0, 4.43745e-08, -2.84875e-08, -4.37114e-08, -0.507585, 1.24522e-15, -1, 2.21872e-08, 1.14111, -0.588835, 4.09601)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_lkh27")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People52"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People53" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325858, 0, 4.43745e-08, -2.84875e-08, -4.37114e-08, -0.507585, 1.24522e-15, -1, 2.21872e-08, -1.36694, -0.588835, 4.58638)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_lkh27")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People53"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People54" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.325858, 0, 4.43745e-08, -2.84875e-08, -4.37114e-08, -0.507585, 1.24522e-15, -1, 2.21872e-08, -0.29146, -0.588835, 3.9189)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_lkh27")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People54"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People46" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.288274, 0, 4.43745e-08, -2.52018e-08, -4.37114e-08, -0.507585, 1.1016e-15, -1, 2.21872e-08, -2.4359, -0.588835, 5.50731)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1lsl")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People46"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People70" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.288274, 0, 4.43745e-08, -2.52018e-08, -4.37114e-08, -0.507585, 1.1016e-15, -1, 2.21872e-08, -1.0756, -0.588835, 6.75222)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1lsl")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People70"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People49" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.288274, 0, 4.43745e-08, -2.52018e-08, -4.37114e-08, -0.507585, 1.1016e-15, -1, 2.21872e-08, 0.693791, -0.588835, 4.69595)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1lsl")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People49"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People50" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.288274, 0, 4.43745e-08, -2.52018e-08, -4.37114e-08, -0.507585, 1.1016e-15, -1, 2.21872e-08, -1.56078, -0.588835, 3.92426)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1lsl")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People50"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People51" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.288274, 0, 4.43745e-08, -2.52018e-08, -4.37114e-08, -0.507585, 1.1016e-15, -1, 2.21872e-08, 2.61833, -0.588835, 4.84841)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1lsl")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People51"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People47" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.288528, 0, 4.43745e-08, -2.5224e-08, -4.37114e-08, -0.507585, 1.10257e-15, -1, 2.21872e-08, -0.229854, -0.588835, 5.46841)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_0uji0")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People47"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People73" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.288528, 0, 4.43745e-08, -2.5224e-08, -4.37114e-08, -0.507585, 1.10257e-15, -1, 2.21872e-08, -4.63092, -0.588835, 4.32042)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_0uji0")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People73"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People74" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.288528, 0, 4.43745e-08, -2.5224e-08, -4.37114e-08, -0.507585, 1.10257e-15, -1, 2.21872e-08, 3.79738, -0.588835, 5.22634)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_0uji0")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People74"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People75" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.288528, 0, 4.43745e-08, -2.5224e-08, -4.37114e-08, -0.507585, 1.10257e-15, -1, 2.21872e-08, 4.36182, -0.603523, 4.25403)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_0uji0")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People75"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People48" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.285554, 0, 4.43745e-08, -2.49639e-08, -4.37114e-08, -0.507585, 1.09121e-15, -1, 2.21872e-08, -0.825211, -0.588835, 5.46841)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_earwb")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People48"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People71" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.285554, 0, 4.43745e-08, -2.49639e-08, -4.37114e-08, -0.507585, 1.09121e-15, -1, 2.21872e-08, -3.46288, -0.588835, 5.46841)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_earwb")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People71"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People72" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.285554, 0, 4.43745e-08, -2.49639e-08, -4.37114e-08, -0.507585, 1.09121e-15, -1, 2.21872e-08, -2.98807, -0.588835, 6.13803)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_earwb")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People72"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People9" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.230378, -0.707107, 4.70662e-08, -2.84827e-08, -4.37114e-08, -0.507585, 0.230378, -0.707107, -1.56888e-08, 5.32841, 0.642142, 5.86683)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_mjccp")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People9"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People10" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.232326, -0.707107, 4.70662e-08, -2.87235e-08, -4.37114e-08, -0.507585, 0.232326, -0.707107, -1.56888e-08, 4.90377, 0.642142, 6.29146)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_qu5s1")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People10"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People11" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.230417, -0.707107, 4.70662e-08, -2.84875e-08, -4.37114e-08, -0.507585, 0.230417, -0.707107, -1.56888e-08, 4.44372, 0.642142, 6.75151)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_8kgrp")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People11"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People12" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.230417, -0.707107, 4.70662e-08, -2.84875e-08, -4.37114e-08, -0.507585, 0.230417, -0.707107, -1.56888e-08, 4.02274, 0.642142, 7.1725)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_lmm2w")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People12"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People13" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.230417, -0.707107, 4.70662e-08, -2.84875e-08, -4.37114e-08, -0.507585, 0.230417, -0.707107, -1.56888e-08, 4.75075, 0.0642967, 5.45323)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_lkh27")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People13"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People14" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.203841, -0.707107, 4.70662e-08, -2.52018e-08, -4.37114e-08, -0.507585, 0.203841, -0.707107, -1.56888e-08, 4.36853, 0.0642967, 5.83544)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1lsl")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People14"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People15" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.20402, -0.707107, 4.70662e-08, -2.5224e-08, -4.37114e-08, -0.507585, 0.20402, -0.707107, -1.56888e-08, 3.94809, 0.0642967, 6.25589)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_0uji0")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People15"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People16" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.201917, -0.707107, 4.70662e-08, -2.49639e-08, -4.37114e-08, -0.507585, 0.201917, -0.707107, -1.56888e-08, 3.52711, 0.0642967, 6.67687)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_earwb")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People16"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People17" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-2.98023e-08, -1, 2.21872e-08, -2.84827e-08, -4.37114e-08, -0.507585, 0.325804, 5.96046e-08, -4.43745e-08, 6.59227, 0.642142, 0.928409)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_mjccp")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People17"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People18" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-4.47035e-08, -1, 2.21872e-08, -2.87236e-08, -4.37114e-08, -0.507585, 0.328559, 8.9407e-08, -4.43745e-08, 6.59227, 0.642142, 1.52893)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_qu5s1")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People18"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People19" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(0, -1, 2.21872e-08, -2.84875e-08, -4.37114e-08, -0.507585, 0.325858, 0, -4.43745e-08, 6.59227, 0.642142, 2.17955)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_8kgrp")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People19"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People20" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(0, -1, 2.21872e-08, -2.84875e-08, -4.37114e-08, -0.507585, 0.325858, 0, -4.43745e-08, 6.59227, 0.642142, 2.7749)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_lmm2w")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People20"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People21" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(0, -1, 2.21872e-08, -2.84875e-08, -4.37114e-08, -0.507585, 0.325858, 0, -4.43745e-08, 5.89135, 0.0642967, 1.04442)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_lkh27")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People21"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People22" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(0, -1, 2.21872e-08, -2.52018e-08, -4.37114e-08, -0.507585, 0.288274, 0, -4.43745e-08, 5.89135, 0.0642967, 1.58495)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1lsl")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People22"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People23" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(0, -1, 2.21872e-08, -2.5224e-08, -4.37114e-08, -0.507585, 0.288528, -2.98023e-08, -4.43745e-08, 5.89135, 0.0642967, 2.17955)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_0uji0")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People23"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People24" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(0, -1, 2.21872e-08, -2.49639e-08, -4.37114e-08, -0.507585, 0.285554, 0, -4.43745e-08, 5.89135, 0.0642967, 2.7749)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_earwb")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People24"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People25" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(1.31962e-09, 1, -2.21872e-08, -2.84827e-08, -4.37114e-08, -0.507585, -0.325804, -1.47027e-07, 4.43745e-08, -6.82761, 0.642142, 2.82049)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_mjccp")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People25"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People26" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(1.598e-08, 1, -2.21872e-08, -2.87236e-08, -4.37114e-08, -0.507585, -0.328559, -1.7683e-07, 4.43745e-08, -6.82761, 0.642142, 2.21997)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_qu5s1")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People26"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People27" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-2.84874e-08, 1, -2.21872e-08, -2.84875e-08, -4.37114e-08, -0.507585, -0.325858, -8.74228e-08, 4.43745e-08, -6.82761, 0.642142, 1.56936)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_8kgrp")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People27"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People28" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-2.84874e-08, 1, -2.21872e-08, -2.84875e-08, -4.37114e-08, -0.507585, -0.325858, -8.74228e-08, 4.43745e-08, -6.82761, 0.642142, 0.974)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_lmm2w")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People28"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People29" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-2.84874e-08, 1, -2.21872e-08, -2.84875e-08, -4.37114e-08, -0.507585, -0.325858, -8.74228e-08, 4.43745e-08, -6.12668, 0.0642967, 2.70449)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_lkh27")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People29"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People30" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-2.52017e-08, 1, -2.21872e-08, -2.52018e-08, -4.37114e-08, -0.507585, -0.288274, -8.74228e-08, 4.43745e-08, -6.12668, 0.0642967, 2.16395)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1lsl")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People30"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People31" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-2.52239e-08, 1, -2.21872e-08, -2.5224e-08, -4.37114e-08, -0.507585, -0.288528, -5.76204e-08, 4.43745e-08, -6.12668, 0.0642967, 1.56936)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_0uji0")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People31"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People32" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-2.49639e-08, 1, -2.21872e-08, -2.49639e-08, -4.37114e-08, -0.507585, -0.285554, -8.74228e-08, 4.43745e-08, -6.12668, 0.0642967, 0.974)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_earwb")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People32"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People33" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.230378, 0.707107, 1.56888e-08, -2.84827e-08, -4.37114e-08, -0.507585, -0.230378, -0.707107, 4.70662e-08, -3.93179, 0.642142, 7.17975)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_mjccp")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People33"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People40" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.201917, 0.707107, 1.56888e-08, -2.49639e-08, -4.37114e-08, -0.507585, -0.201917, -0.707107, 4.70662e-08, -4.74183, 0.0642967, 5.37845)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_earwb")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People40"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People34" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.232326, 0.707107, 1.56888e-08, -2.87236e-08, -4.37114e-08, -0.507585, -0.232326, -0.707107, 4.70662e-08, -4.35643, 0.642142, 6.75511)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_qu5s1")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People34"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People35" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.230417, 0.707107, 1.56888e-08, -2.84875e-08, -4.37114e-08, -0.507585, -0.230417, -0.707107, 4.70662e-08, -4.81648, 0.642142, 6.29506)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_8kgrp")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People35"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People36" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.230417, 0.707107, 1.56888e-08, -2.84875e-08, -4.37114e-08, -0.507585, -0.230417, -0.707107, 4.70662e-08, -5.23746, 0.642142, 5.87408)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_lmm2w")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People36"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People37" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.230417, 0.707107, 1.56888e-08, -2.84875e-08, -4.37114e-08, -0.507585, -0.230417, -0.707107, 4.70662e-08, -3.51819, 0.0642967, 6.60209)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_lkh27")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People37"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People38" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.203841, 0.707107, 1.56888e-08, -2.52018e-08, -4.37114e-08, -0.507585, -0.203841, -0.707107, 4.70662e-08, -3.90041, 0.0642967, 6.21987)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_a1lsl")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People38"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="People39" type="MeshInstance3D" parent="Decors/Public"]
+transform = Transform3D(-0.20402, 0.707107, 1.56888e-08, -2.5224e-08, -4.37114e-08, -0.507585, -0.20402, -0.707107, 4.70662e-08, -4.32085, 0.0642967, 5.79943)
+mesh = SubResource("PlaneMesh_irfig")
+surface_material_override/0 = SubResource("StandardMaterial3D_0uji0")
+script = ExtResource("9_dvbui")
+
+[node name="Background" type="MeshInstance3D" parent="Decors/Public/People39"]
+transform = Transform3D(-1, 8.74228e-08, 1.24704e-07, -8.74228e-08, -1, 1.72233e-07, 1.24704e-07, 1.72233e-07, 1, 0, 0, 0)
+mesh = SubResource("PlaneMesh_irfig")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xbsm2")
+
+[node name="Poteau" type="Node" parent="Decors"]
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="Decors/Poteau"]
+transform = Transform3D(-1.18967, 8.3764e-07, 0, 1.04004e-07, 9.58148, 5.3288e-08, 0, 4.1882e-07, -1.21909, -9.04889, 3.54723, -6.35679)
+mesh = SubResource("BoxMesh_gra7w")
+surface_material_override/0 = SubResource("StandardMaterial3D_swjtj")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Decors/Poteau"]
+transform = Transform3D(-15.5473, 1.09529e-07, 0, 1.35919e-06, 1.25287, 5.3288e-08, 0, 5.47647e-08, -1.21909, -0.693151, 7.61439, -6.39138)
+mesh = SubResource("BoxMesh_gra7w")
+surface_material_override/0 = SubResource("StandardMaterial3D_q617e")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Decors/Poteau"]
+transform = Transform3D(-15.5473, 1.09529e-07, 0, 1.35919e-06, 1.25287, 5.3288e-08, 0, 5.47647e-08, -1.21909, -0.693151, 7.61439, 10.9743)
+mesh = SubResource("BoxMesh_gra7w")
+surface_material_override/0 = SubResource("StandardMaterial3D_q617e")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="Decors/Poteau"]
+transform = Transform3D(-1.18967, 8.3764e-07, 0, 1.04004e-07, 9.58148, 5.3288e-08, 0, 4.1882e-07, -1.21909, 7.63087, 3.54723, -6.35679)
+mesh = SubResource("BoxMesh_gra7w")
+surface_material_override/0 = SubResource("StandardMaterial3D_swjtj")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="Decors/Poteau"]
+transform = Transform3D(-1.18068, 8.3764e-07, 0, 1.03218e-07, 9.58148, 4.75127e-08, 0, 4.1882e-07, -1.08696, 7.63087, 3.54723, 10.9821)
+mesh = SubResource("BoxMesh_gra7w")
+surface_material_override/0 = SubResource("StandardMaterial3D_swjtj")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="Decors/Poteau"]
+transform = Transform3D(-1.18068, 8.3764e-07, 0, 1.03218e-07, 9.58148, 4.75127e-08, 0, 4.1882e-07, -1.08696, -9.02582, 3.54905, 10.9824)
+mesh = SubResource("BoxMesh_gra7w")
+surface_material_override/0 = SubResource("StandardMaterial3D_swjtj")
+
+[node name="Murs" type="Node" parent="Decors"]
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="Decors/Murs"]
+transform = Transform3D(-21.1742, 8.37638e-07, 0, 1.85111e-06, 9.58147, 5.3288e-08, 0, 4.18819e-07, -1.21909, -0.755707, 3.54723, -7.42382)
+mesh = SubResource("BoxMesh_gra7w")
+skeleton = NodePath("../../Poteau")
+surface_material_override/0 = SubResource("StandardMaterial3D_82chy")
+
+[node name="MeshInstance3D11" type="MeshInstance3D" parent="Decors/Murs"]
+transform = Transform3D(9.25553e-07, 4.18819e-07, -1.21909, 1.85111e-06, 9.58147, 5.3288e-08, 21.1742, -8.37638e-07, 5.3288e-08, -10.6727, 3.54723, 2.23301)
+mesh = SubResource("BoxMesh_gra7w")
+skeleton = NodePath("../../Poteau")
+surface_material_override/0 = SubResource("StandardMaterial3D_82chy")
+
+[node name="MeshInstance3D12" type="MeshInstance3D" parent="Decors/Murs"]
+transform = Transform3D(9.25553e-07, 4.18819e-07, -1.21909, 1.85111e-06, 9.58147, 5.3288e-08, 21.1742, -8.37638e-07, 5.3288e-08, 8.92134, 3.54723, 2.23301)
+mesh = SubResource("BoxMesh_gra7w")
+skeleton = NodePath("../../Poteau")
+surface_material_override/0 = SubResource("StandardMaterial3D_82chy")
+
+[node name="Plafond" type="MeshInstance3D" parent="Decors/Murs"]
+transform = Transform3D(-10.4612, 0, 0, 0, -1, 9.38765e-07, 0, -8.74229e-08, -10.7382, -1.26412, 8.05445, 2.22698)
+mesh = SubResource("PlaneMesh_s5n2c")
+surface_material_override/0 = SubResource("StandardMaterial3D_oldsk")
+
+[node name="Plafond2" type="MeshInstance3D" parent="Decors/Murs"]
+transform = Transform3D(-9.90938, 0, 0, 0, 1.31134e-07, 5.19698, 0, -1, 6.81502e-07, -1.25463, 3.44565, 12.0429)
+mesh = SubResource("PlaneMesh_s5n2c")
+surface_material_override/0 = SubResource("StandardMaterial3D_oldsk")
+
+[node name="WallMapBorderL" type="StaticBody3D" parent="Decors/Murs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.71224, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Decors/Murs/WallMapBorderL"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.019043, 2.53061, -1.37256)
+shape = SubResource("BoxShape3D_yg7cy")
+
+[node name="WallMapBorderR" type="StaticBody3D" parent="Decors/Murs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.11256, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Decors/Murs/WallMapBorderR"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.019043, 2.53061, -1.37256)
+shape = SubResource("BoxShape3D_yg7cy")
+
+[node name="SupportScene" type="MeshInstance3D" parent="Decors"]
+transform = Transform3D(1, 0.000842615, -0.0003578, -0.000842691, 1, -0.000223905, 0.000357622, 0.000224189, 1, -0.207006, -1.05227, -2.01674)
+mesh = ExtResource("23_1blki")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_vmfwo")
+
+[node name="Props" type="Node" parent="Decors"]
+
+[node name="PorteSortie" type="Node" parent="Decors/Props"]
+
+[node name="Porte" type="MeshInstance3D" parent="Decors/Props/PorteSortie"]
+transform = Transform3D(0.820377, 0, 0, 0, 2.12098, 0, 0, 0, 0.129187, 4.49215, 0.00623655, 12.0503)
+mesh = SubResource("BoxMesh_s68ie")
+skeleton = NodePath("../..")
+
+[node name="Porte2" type="MeshInstance3D" parent="Decors/Props/PorteSortie"]
+transform = Transform3D(0.820377, 0, 0, 0, 2.12098, 0, 0, 0, 0.129187, 3.57849, 0.00623655, 12.0503)
+mesh = SubResource("BoxMesh_s68ie")
+skeleton = NodePath("../..")
+
+[node name="Exit" type="MeshInstance3D" parent="Decors/Props/PorteSortie"]
+transform = Transform3D(0.820377, 0, 0, 0, 0.264539, 0, 0, 0, 0.129187, 4.05804, 1.38017, 12.0503)
+mesh = SubResource("BoxMesh_s68ie")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5tf1q")
+
+[node name="PorteSortie2" type="Node" parent="Decors/Props"]
+
+[node name="Porte" type="MeshInstance3D" parent="Decors/Props/PorteSortie2"]
+transform = Transform3D(0.820377, 0, 0, 0, 2.12098, 0, 0, 0, 0.129187, -3.86726, 0.00623655, 12.0503)
+mesh = SubResource("BoxMesh_s68ie")
+skeleton = NodePath("../..")
+
+[node name="Porte2" type="MeshInstance3D" parent="Decors/Props/PorteSortie2"]
+transform = Transform3D(0.820377, 0, 0, 0, 2.12098, 0, 0, 0, 0.129187, -4.78092, 0.00623655, 12.0503)
+mesh = SubResource("BoxMesh_s68ie")
+skeleton = NodePath("../..")
+
+[node name="Exit" type="MeshInstance3D" parent="Decors/Props/PorteSortie2"]
+transform = Transform3D(0.820377, 0, 0, 0, 0.264539, 0, 0, 0, 0.129187, -4.30137, 1.38017, 12.0503)
+mesh = SubResource("BoxMesh_s68ie")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_5tf1q")
+
+[node name="PlayerStarter" type="Node" parent="."]
+
+[node name="StartPlayer_1" type="Node3D" parent="PlayerStarter"]
+transform = Transform3D(1, 0.000842615, -0.0003578, -0.000842691, 1, -0.000223905, 0.000357622, 0.000224189, 1, -2.28014, 1.89321, -1.0894)
+
+[node name="StartPlayer_2" type="Node3D" parent="PlayerStarter"]
+transform = Transform3D(1, 0.000842614, -0.0003578, -0.000842691, 1, -0.000223905, 0.000357622, 0.000224189, 1, -1.09524, 1.89321, -1.0894)
+
+[node name="StartPlayer_3" type="Node3D" parent="PlayerStarter"]
+transform = Transform3D(1, 0.000842614, -0.0003578, -0.000842691, 1, -0.000223905, 0.000357622, 0.000224189, 1, 0.134528, 1.89321, -1.0894)
+
+[node name="StartPlayer_4" type="Node3D" parent="PlayerStarter"]
+transform = Transform3D(1, 0.000842614, -0.0003578, -0.000842691, 1, -0.000223905, 0.000357622, 0.000224189, 1, 1.73996, 1.89321, -1.0894)
+
+[connection signal="gui_input" from="HUD/TitlePanel" to="HUD/TitlePanel" method="_on_gui_input"]

@@ -1,0 +1,173 @@
+[gd_scene load_steps=13 format=3 uid="uid://civsd78ajjn4u"]
+
+[ext_resource type="Script" path="res://select_player.gd" id="1_71lcs"]
+[ext_resource type="Texture2D" uid="uid://lgthh2phmkcc" path="res://carre_vert-croix_rouge.png" id="2_aup0d"]
+[ext_resource type="Texture2D" uid="uid://prouddvjwm4v" path="res://Asset/Character/All.png" id="2_npf54"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oj4iu"]
+atlas = ExtResource("2_npf54")
+region = Rect2(0, 0, 36, 33)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oul8w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oj4iu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vvvin"]
+atlas = ExtResource("2_npf54")
+region = Rect2(0, 33, 36, 33)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3n35o"]
+atlas = ExtResource("2_aup0d")
+region = Rect2(315, 0, 315, 355)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r402w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vvvin")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3n35o")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8637"]
+atlas = ExtResource("2_npf54")
+region = Rect2(0, 66, 36, 33)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nnfps"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8637")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cien7"]
+atlas = ExtResource("2_npf54")
+region = Rect2(0, 99, 36, 33)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ueau6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cien7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="select_player" type="Panel"]
+offset_left = 235.0
+offset_top = 106.0
+offset_right = 945.0
+offset_bottom = 470.0
+script = ExtResource("1_71lcs")
+
+[node name="Label_choix" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -2.428
+anchor_top = -2.856
+anchor_right = -2.428
+anchor_bottom = -2.856
+offset_left = 1913.88
+offset_top = 1066.58
+offset_right = 2192.88
+offset_bottom = 1089.58
+text = "Activer la manette de Juliette "
+
+[node name="Label_choix2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -2.428
+anchor_top = -2.856
+anchor_right = -2.428
+anchor_bottom = -2.856
+offset_left = 1890.88
+offset_top = 1291.58
+offset_right = 2239.88
+offset_bottom = 1314.58
+text = "Appuyez sur \"Sauter\" pour rejoindre la partie"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 60.0
+offset_right = 116.0
+offset_bottom = 83.0
+text = "Juliette"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 60.0
+offset_right = 272.0
+offset_bottom = 83.0
+text = "Roméo"
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 369.0
+offset_top = 60.0
+offset_right = 446.0
+offset_bottom = 83.0
+text = "Consierge"
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 0
+offset_left = 536.0
+offset_top = 60.0
+offset_right = 608.0
+offset_bottom = 83.0
+text = "Anna"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 251.0
+offset_top = 292.0
+offset_right = 431.0
+offset_bottom = 337.0
+text = "\"Press Start\""
+
+[node name="s_Juliette" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(71.9999, 134)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_oul8w")
+
+[node name="s_Romeo" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(233, 134)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_r402w")
+
+[node name="s_player_3" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(410, 135)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_nnfps")
+
+[node name="s_player_4" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(580, 134)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_ueau6")
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
